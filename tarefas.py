@@ -1,6 +1,12 @@
 #criando a lista de afazeres
 atividades = []
-
+cont = 0
+with open("tarefas.txt","r") as archive:
+    for tarefa in archive:
+     atividades.append(tarefa.strip())
+     print(f"{cont} - {tarefa}")
+     cont +=1
+            
 while True:
     #criando o menu
     print("""
@@ -31,6 +37,9 @@ while True:
         for tarefa in atividades:
             print (f"{cont} - {tarefa}")
             cont += 1 #acrescenta tarefas na lista
+        
+        
+        
     
     if escolha == "3": #se a opção escolhida for = 3, a tarfa será marcada como concluida 
         print("Você escolheu marcar tarefa como concluida.")
