@@ -1,7 +1,9 @@
+import json
+
 #criando a lista de afazeres
 atividades = []
-cont = 0
-with open("tarefas.txt","r") as archive:
+
+with open("tarefas.json","r") as archive:
     for tarefa in archive:
      atividades.append(tarefa.strip())
      print(f"{cont} - {tarefa}")
