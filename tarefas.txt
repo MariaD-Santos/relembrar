@@ -1,0 +1,3 @@
+limpar
+lavar[X]
+dar comida ao gato[X]
